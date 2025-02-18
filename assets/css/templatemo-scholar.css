@@ -365,7 +365,7 @@ Header Style
   color: #f3efe7;
   right: 20px;
   top: 15px;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 .header-area .main-nav ul.nav {
@@ -386,8 +386,8 @@ Header Style
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
   height: 40px;
   line-height: 40px;
 }
@@ -397,8 +397,8 @@ Header Style
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 20px;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 15px;
   height: 40px;
   line-height: 40px;
   text-transform: capitalize;
@@ -408,7 +408,11 @@ Header Style
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   border: transparent;
-  letter-spacing: .25px;
+  letter-spacing: .15px;
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('./fa-regular-400.woff2') format('woff2');
+  }
 }
 
 .background-header .main-nav .nav {margin-top: 20px;}
@@ -559,7 +563,7 @@ Header Style
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 786px) {
   .background-header .main-nav .nav,
   .header-area .main-nav .nav {
     background-color:#f3efe7;
@@ -624,7 +628,7 @@ Header Style
   }
   .header-area .logo {
     margin-left: 0px;
-    margin-top: 30px;
+    margin-top: 25px;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -1193,7 +1197,7 @@ Team Style
 
 .team-member .main-content ul li a {
   background-color: #f3efe7;
-  color: #8a8a7f;
+  color: #2e4728;
   display: inline-block;
   text-align: center;
   line-height: 40px;
@@ -1457,7 +1461,7 @@ Contact Style
   position: absolute;
   left: 0;
   top: 0;
-  background-color:#8a8a7f;
+  background-color:#108069;
   width: 80px;
   padding: 30px 8px;
   line-height: 25px;
@@ -1500,7 +1504,23 @@ Contact Style
   font-style: normal;
   color: #8a8a7f;
 }
-
+.contact-us .special-offer span.offer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #5b5b4d;
+  width: 80px;
+  padding: 30px 8px;
+  line-height: 25px;
+  height: 120px;
+  border-radius: 15px 60px 60px 15px; 
+  display: inline-block;
+  text-align: center;
+  color: #f3efe7;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: left;
+}
 .contact-us .special-offer a {
   position: absolute;
   right: 30px;
@@ -1510,9 +1530,71 @@ Contact Style
   display: inline-block;
   text-align: center;
   line-height: 50px;
-  background-color: #8a8a7f;
+  background-color: #5b5b4d;
   color: #f3efe7;
   border-radius: 50%;
+}
+
+.contact-us .special-offer a:nth-child(1) {
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  background-color: #5b5b4d;
+  color: #f3efe7;
+  border-radius: 50%;
+}
+
+.contact-us .special-offer a:nth-child(2) {
+  position: absolute;
+  right: 90px;
+  top: 35px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  background-color: #5b5b4d;
+  color: #f3efe7;
+  border-radius: 50%;
+}
+
+.contact-us .special-offer a:nth-child(3) {
+  position: absolute;
+  right: 150px;
+  top: 35px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  background-color: #5b5b4d;
+  color: #f3efe7;
+  border-radius: 50%;
+}
+
+.contact-us .special-offer a:nth-child(4) {
+  position: absolute;
+  right: 210px;
+  top: 35px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  background-color: #5b5b4d;
+  color: #f3efe7;
+  border-radius: 50%;
+}
+
+/* Hover effect for all social icons */
+.contact-us .special-offer a:hover {
+  background-color: #fff;
+  color: #1e3d3d;
 }
 
 .contact-us .contact-us-content {
